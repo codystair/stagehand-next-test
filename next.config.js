@@ -2,7 +2,6 @@ const path = require('path')
 const glob = require('glob')
 
 module.exports = {
-  basePath: 'blah',
   webpack: (config, { dev }) => {
     config.module.rules.push(
       {
@@ -33,6 +32,7 @@ module.exports = {
     ),
     return config
   },
+  basePath: 'blah'
   // exportPathMap: function(defaultPathMap) {
   //   return {
   //     '/': { page: '/' },
