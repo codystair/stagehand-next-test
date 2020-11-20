@@ -7,7 +7,7 @@ import BannerLanding from "../components/BannerLanding";
 export default () => (
   <Layout>
     <Head>
-      <title>Landing Page Test</title>
+      <title>Landing Page</title>
       <meta name="description" content="Landing Page" />
     </Head>
 
