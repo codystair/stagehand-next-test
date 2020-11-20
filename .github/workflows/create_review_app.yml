@@ -42,7 +42,7 @@ jobs:
       #     SECRET1=${{ secrets.YOUR_SECRET1 }}\n\
       #     SECRET2=${{ secrets.YOUR_SECRET2 }}" > .env.local
       - name: Build Site
-        run: npm run export
+        run: npm run-script export
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ env.AWS_ACCESS_KEY_ID }}
