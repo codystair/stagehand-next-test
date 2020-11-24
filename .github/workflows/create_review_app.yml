@@ -42,7 +42,7 @@ jobs:
       #     SECRET1=${{ secrets.YOUR_SECRET1 }}\n\
       #     SECRET2=${{ secrets.YOUR_SECRET2 }}" > .env.local
       - name: Build Site
-        run: npm run-script build
+        run: npm run-script export
       - name: Inject routes into stagehand files
         run: |
           sed -i 's/STAGEHAND_PLACEHOLDER/${{ env.AWS_CF_DOMAIN }}/' stagehand/stagehand_js.js
