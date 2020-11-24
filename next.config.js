@@ -36,7 +36,6 @@ module.exports = {
     );
     return config;
   },
-  basePath: "blah",
   // exportPathMap: function(defaultPathMap) {
   //   return {
   //     '/': { page: '/' },
